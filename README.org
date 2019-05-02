@@ -1,0 +1,15 @@
+* Why
+
+This repo aims to provide basic commands  for getting program coverage info. Clang-6.0 is assumed to have been installed. I tested the commands below on Ubuntu 16.
+
+
+* How
+
+
+- Run "make cov1" to see how to use Clang for a gcov-style coverage info
+
+- Run "make cov2" to see how to get an alternative, more visual,  form of coverage info
+
+- Run "make clean" to remove generated file during coverage profiling
+
+- See Makefile to get details
