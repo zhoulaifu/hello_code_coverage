@@ -6,10 +6,10 @@ cov0:
 	./a.out
 	@echo "\n"Step 3
 	gcov greatest_of_three.c
-	@echo "\n"Step 4
+	@echo "\n"Step 4: Generating coverage report
 	lcov --capture --directory . --output-file a.info
-	@echo "\n"Step 5
-	genhtml a.info
+	@echo "\n"Step 5: output  report in html to ./out
+	genhtml a.info --output-directory out
 
 cov1:
 	@echo "\n"getting coverage with clang and llvm-cov in the gcov style
